@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  docs-nginx:
+    depends_on:
+    - docs-php
+    ports:
+      - '80:80'
+      - '443:443'
